@@ -16,3 +16,5 @@ Made for CS349 Assignment 1, fun to make functions:
 -stablized random terrain generation
 
 -terrain destruction
+
+So much trolling in the code...this project has become one huge elaborate joke
