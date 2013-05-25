@@ -1,9 +1,136 @@
+/*
+
+                                                                   `...------:::-.`
+                                                               .:/+//:---------------....`
+                                                           `.-::------------------------:/++:`
+                                                        `.----------------------------------://.             ``...----..`
+                                                      `.------------------::-------------------::.        `.---------------.``
+                                                    .----------------------/+:--------::---------:+oooo++:-------------------::.
+                                                   -------------------------:s/--------:/----------+hyhhyy+-------------------:so`
+                                                  ---------------------------:yo--------:/----------+yyyhhys/----:-------------:hs`
+                                                 -:---------------------------:h+--------:/----------/syyhhyys:--/s+------------/m+
+                                               `-//----------------------:-----/d/--------:/----------/oyhddhhh/--:yh:-----------sm.
+                                              `--s:-------------:--------:/-----oy---------+/---------:+shhNNhhd+:--oh-----------:ds
+                                              -:/h--------------/:--------//----:y:--------:s:---------o/hhdNmhd//ssod/-----------od.
+                                             `s:+h--------------//---------o/----+o/--------s+---------s:omhmNdh+-:yyh:-----------/m/
+                                            ./m//h---:----------:o:------:-:o:---/ss--------+y--------:h:/mmmNmdho-:dy------------:hs
+                                           `ooNo:h:--/-----------so:-----/:-:o---:sh:-------/h--------yy-oNNmNNdhos/y:-------------yy
+                                           /o/mh:o+--+:----------/h+/----:o--//---ym:-------:h:------od/:hdhNNNmNmNh:--------------yd`
+                                           +:-hs+:s--/s-----------yyo/----s/--//--hm/-------:y:-----+do-+NsoNMNmNNd:--------------:mN-
+                                           ::-/s//+/--h+----------/mss/---/y:--/::hN/-------:s-----+h+-:hm/sMMNNNh:---------------sNM:
+                                           `/:-:/:+s--od/---::-----smos/---so---:/ym/-------:o----+s/--+moomMNNNh:---------------/mNM:
+                                            .o:..--//--oh/--:/:----:dmoo/--:y/---/sN/-------:+--://:--/dssmmNNNh:------------:--:yNmM:
+                                            :/:/++/-::--:o/--:o:----/mmo+/--:s:--/oN/-------//-::----/ysymssNNd:------------:---oNydN-
+                                           ./::s/syh//--..-:--:s/----+dms+/--//--/+N/-------+/------/oohms:sNd/------------::--/md/mN.
+                                          `::+--`yydd/:--....--:s/:://odmy+/--:--:+N/-------o:----::/odh+::hd/------------:/--:hNo/Nd`
+                                          -::+...odmmo.:--....--:/:///++/+so/---::om:------:o:----:/yh+::/yy:-------------+:-:sNN/oMo
+                                         .:-o:```./o+-`.--.......-+syhmmhs////:---od-------++----:ohyo::oh+--------------+/--+NMm:yN-
+     `.-:/++/-`                         .:-:y.```````````.-......--.+sddmmmds/----sh------:s/-::+ydds:+hy:--------------++--/mNNh:dd`
+   ./o+/-.````-.                       .:--+s``````````````..```````+hhdmdhmmo..--ss------/y/+ohmNdo+hh+----------:----++--/dNymo/N+
+ .+o:`        .o:``                   .::--s+```````````````````````.:/+ooo/-...--s+------ssoyyyo+/oho:---------------+o:-/dNhom/sm.
+-d/`          `./+s/`                ./:---s/`````--````````````````````````....--s/-----:h/:::::/oo/----------------o+--+dNm+hy:ho`
+.s.         ``````.os.             `-:---:omo````:s`````````````````````````...---o:-----oy:/++/os/-----------::---:o+-:ommso/m//h-
+:md:     ``````...../y/`        `.-----:+dNNh````.+.```````````````````````....---+-----:hyo+/os/-----------:o/---/o/-/yNd-::sy-++`
+oNNNo````````.....---:so.     `----:-:/hNNNNd-````:-`..```````````````````.....:--:--:+sso//os+:-----------+y/--:++::+mNy.`:/h:-+`
+`/mNNh:```......-----::+y:``.---:+/:+hNNNNh::/````````````````````````````....::--/+so+:/shy+:-----------/hh:--++:-/yNm+` -:s+-:-
+  -hNNmo.....-----:::://+s:--:oys/odNNNms:` `/```-+:-.```````````````````.....o+oo+/:+ydmh+------------:yNy::oo/-:omNd-  `-+o---
+   `sNNNh:------:::://+/---+ymhshmmdy+-`     -.``:yhy+-``````````````..://++++/::+ydmmmy/------------:yNmooys/--/hNNs`   ./o--:`
+     /mNNmo--:::://+o/---odNNNy+:.`          `-``+sshhy+.`..-://+ooooo++/::/+shdmhsoso/------------:yNNmdho:--:omNm/    `:+--/`
+      .hNNNh/:///+o/---omNdhyhs.             `-../sooooo//+///::---:/+oshdmNNy+::/+/:------------/hNMMmy/----/dNNh-    `-/--/.
+       `oNNNmo/+oo---odmhsyyyhhd/             `-......-::///++++oooo++shNNNNNo::/:------------:odNNNd+-----:yNNNo`    `-:--:.
+         :dNNNhy/--/hdyyyyyhhhddms`            :.```````````......:ohmNNNNNNmo:-------------+hdhdds:-----:omNNm:     `/:---`
+          .yNNd/--sdyyyyhhhhdddmmmd-           .+-......----:/oydNNNNNNNNds/-------------+yho/sy+-------+dNNNd-     `o/---`
+           `+d/-:hhyyyhhhddddmmNNNNh.           .://++////+mNNNNNNNNNNds/------------:ohd+.-os:-------/yNNNNh.     .y+---`
+            `/-/mNNmmdddddmmmNNNNNNNd:                     -dmmmmNNds/-----------:+ydmdyh+oo:-------:smNNNNy.     -ho---
+            .:::dNNNNNNNNNNNNNNNNNNNNm+`                    -dmdyo/----------:+ydddNdyyhds:-------:smNNNNNy`     :do--.
+            .--`yNNmNNNNNNNNNNNNNNNNNNNy.                  .:++:---------:+ydmho/:oNyhdy:-------/sydNNNNNy`    `+mo--.
+            -:` +Nd-omNNNNNNNNNNNNNNNNNNd:              `://---------:+ydNNNy:----+mdy/-------/yy:-mNNNNd.    `sd+--`
+            ::  :Nm. .yNNNNNNNNNNNNNNNNdys+s+`       `-//:--------/sdNNmNNhdo-----sy/-------/ymhsohNNNNh/    -hh:-:`
+           `/-  .mN:  `oNNNNNNNNNNNNdo:....-oy:    `:+/-------/ohmNmdhydNdydo---/s/-------/ydhmdydNNNmos`  `/ds:/:`
+           .+.  `hN/   `/mNmdddddds:......---+do`./+:-----:+yddyohdyyymNdyyds-:s+-------+hdhyyyhmNNNh/omo`.sh/:/.
+           .+.   sNo   .-+m/...........----::/ods/-----/ohdy+-`` -hhhmmhyyydyos:------+hdhyyyyyydNNs::hyddyo:/-`
+           .+`   +Nh. /yyyh:````....----:://+o+/----/syy+-``     `smmdyyyyydmo------+hdhyyyyyyyyNd+:-oyhho/+:`
+           `+.   .yNh/yyyydy-.....---::://++/:---+ss+-.`        `/ddyyyyyyhh/----:ohdyyyyyyyyyyds:--/hyo+sms`
+            -.    `sNmyyhmNNd/----::://++/:---+ydd-`          `/yhyyyyyyyds:----ohmhyyyyyyyyyyyy:-:/sooyddNN:
+                   `sdydNmoodms::://++o+:--/sdmNNs          `/hdhyyyyyyyh+----+yo+myyyyyyyyyyyyh+oooshddddNMh`
+                    .:+NNy`.syddo++ooo/-:ohmNNNNN/        `:oosyhhhhhhhy/---+ds:--dyyyyyyyyyhhhyoo+ymdddmmNMN:
+                    `-/dNNy/-.:hmhss+:/ymNNNNNNNm.       .//.-+syyyyyhs---+hmms---yhyyyyhhhhysys/:-yddddNmNMMs
+                   :hhhhmmo--:/smNh/+hmNNNNNNNNy:      `:-` .:osyyyyyo--/ymdddd/::sdhhhhyyyhhydo--:ddddmNdmMMh
+                   sdyyyso/+oyhmmy+yNNNNNNNNmy:`      :o-  `-+syyyyho--odmddmmmdysshdhhhddhyyydo--/mdddmNdmMMd`
+                 .+dddyyyhhddddhoomNNNNNNms+-`       -s.  `./oyyyyho-:sdhyyyyhdms::yhhhhhhhhhhdo--omdddmNmdNMd`
+                 smhddmhyyyyyso/sdhhddmmmdy/`       `s/   `-/syyyhs-:ydhs+::/syddo-shyyyyhhhhyds--smddddmNmNMm`
+                 sdyyhyhddhhy//hhyyyyyyyyyhm.       +do`  `-+syyyy::ydy:`    -syhdo+dyyyyyymdydy--yNddddmmmmMm`
+               `/ydyyhhddddy/omNmddhyyyyyyhd`      .ddh.  `:osyyh/:ydy-       -yyhdshhyyyhdhhddd--yNddNNNNNNMm`
+               odyydyydmmdo:yNNdNNNmmdyyyyhh`      /mdd+` ./syyyo:hdh:        `+hyydddyyyhyhdydm/-+NddNNNNNNMd`
+               :hdhdddddy/:hNNhdNNmdddhyyyhy`      odddh+:/syyyy/hNdo`         :ddyyhddyyyyyyhdms-:dmdNNNmdmNd`
+               `yhdmddds::ydNdhNNmddddyyyyds      .hddddyyyyyyyoyNmy-       ```:hmdhyyhhyhyyyddmd:-smddNNNddNd`
+               .yyyhdmy--ymyyyhmmdddddyyyymo     -hNmdddhyyyyyssNNds`      -ss+shmmdhyyhdyyyddmmNo-/dddmNNNmNh`
+              -o-:oyyy/-/NNmhyhmddddddyyyhN+   `/hhNmddddyyyyyymNNhs`      /yyhhddmmdddmhyhdddmmmd:-odddmmmNNy
+              /s.../sy:-hNNdNNNmddddddyydmNs` `+yyymmddddhyyyymNNNys:      -syyhddmmddmddddddmNddmy-:hddddmmNs
+              `+so/://-/mdhdNNmmmmddddmmdyyhyosyyyymNdddddyyyyNNNNyys/.     :syyhmNNdmmdddddNmddddmo-+mmdddmN+
+                `:shhs-sNmmddmmddmmmmNmdyyyydhyyyyyhNmdddddyyhNNNmyyyys/.`   :syyhmNmNmmmdmNmddddddm+-sNmdddN:
+                   `:o:hMNNNhsymmmNNmmNNmmmmhyyyyyyymNddddddyhNNNdyyyyyys+-`  -oyyymNNNmNmmmmmdddddNm+:hNmddN.
+                     `-hmy+-` `:yNNNNNNNNNh/syyyyyyyhNmddddddmNNNhyyyyyyyyys/.`.+syydNNNmmmmddddddNmmd+/dNmmm`
+                      -oy       `:hNNNNNNh.`+yyyyyyyyhNmdddddmNNNhyyyyyyyyyyys+-`:osyhmNNmdddddddNmmmdds/dmmd`
+                       :y`        `/dNNNd.  -syyyyyyyyhNNmdddmNNNdhyyyyyyyyyyyys+.`:osymmddddddddNmmNdmNh+hMh`
+                        /.          `+dm:   `syyyyyyyyyymNNmddNNNmdddhyyyyyyyyyyys/``.+ydmddddddddNmmmNmmdsymy-`
+                         `            /o    `syyyyyyyyyydmNNNmNNNmddddddhyyyyyyyyyys:` .ohmmdddddddNNmmmddNm+hNh+.
+                                     `s.    -syyyyyyyyyyhdmNNNNNNNddddddddhyyyyyyyyyyo:``/ymmdddddddmNmdddNm.`:smNho:.`
+                                     //    .oyyyyyyyyyyyhdddmNNNNNNNNNmmmmmmdddddhhhhhyo-`-smmdddddddmmddmMm`   `-+yhdhs+-`
+                                    `o`  `:syyyyyyyyyyyyhddddmNNNNNNNNNNNNNNNNNNNNNNNNNmy+..+dNmdddddddddNNm.
+                                    ./  .osyyyyyyyyyyyyyhddddddmNNNNNNNNNNNNNNNNNNNNNNNNNds/./hNmddddddddmdm.
+                                    /+:+syyyyyyyyyyyyyyyhdddddddmNNNNNNNNNNNNNNNNNNNNNNNNNmhs:-smNmddddddddd/
+                                    oyyyyyyyyyyyyyyyyyyhddddddddddNNNNNNNNNNNNNNNNNNNNNNNNNNdyo:odNmddddddddd-
+                                   `syyyyyyyyyyyyyyyyyhddddddddddddmNNNNNNNNNNNNNNNNNNNNNNNNNmhso+ymmdddddddmh:
+                                    oyyyyyyyyyyyyyhhdddddddddmddddddmmmNNNNNNNNNNNNNNNNNNNNNNNNmysoydNmdddddNmds-
+                                    .yyyyyyyhhhddddddddddddddmddddddddddmNNNNNNNNNNNNNNNNNNNNNNNNdysydNmddddNmdddy/`
+                                     :hdddddddddddddddddddddmmdddddddddddmNNNNNNNNNNNNNNNNNNNNNNNNmhyshmmddmmdddddmdo-
+                                      :dmdddddddddddddddddddmddddddddddddddmNNNNNNNNNNNNNNNNNNNNNNNNdysydNmddddmmmmmmmy/`
+                                       -hmmdddddddddddddddddmmmddddddddddddddmNNNNNNNNNNNNNNNNNNNNNNNmdyyhmmddddddddmmmmds:`
+                                        .ommddddddddddddddddmNdddmmdddddddddddmNNNNNNNNNNNNNNNNNNNNNNNNNdhhmmddddddddddddddho:`
+                                         `:ymNmdddddddddddmNNNddddmmdddddddddddmNNNNNNNNNNNNNNNNNNNNNNNNNNmmmNmdddddddddddddddhs/.`
+                                           `-/sdmmNmmmmNNmddNmdddddmmmdddddddddddNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNmddddddddddddddddddho:.
+                                               `.:/++++/:.`.ymdddddhydmdddddddddddmNNNNNNNNNNNNNNNNNNNNNNNNNNNmdmdddddddddddddddddddmmyo/:.`
+                                                            `smmdddyyyhmmddddddddddmNdNNNNNNNNNNNNNNNNNNNNNNNNdydmddhhhhhhhyyyyyyyyydmy+//++++/:-.`
+                                                             `:ymmhyyyyyhmddddddddmh++mNNNNNNNNNNNNNNNNNNNNNNNdsymhyyyyyyyyyyyyyyyyyddyso+:-..-:/osso/-.`
+                                                               `:ydyyyyyyydddhhhmdo/sdmNNNNNNNNNNNNNNNNNNNNNNNdsydmhyyyyyyyyyyyyyyyyddhhhhyyso+:-...:+shhs/.`
+                                                                 `:yhyyyyyyydhyhd+ohddhhmNNNNNNNNNNNNNNNNNNNNNdsydmmyyyyyyyyyyyyyyyydyyyyyhhdhhysso+:-..:+yhy+-`
+                                                                   `:shyyyyyyhdmyydhsoyhdmNNNNNNNNNNNNNNNNNNNNhsyddmmyyyyyyyyyyyyyyydyyyyyyyyyhddhhyysso/-.-/ydy:`
+                                                                     `:shyyyyydmhdhssdmNdddmNNNNNNNNNNNNNNNNNNsohdddmdyyyyyyyyyyyyyydhyyyyyyyyyyyyhddhyyyss+:--ohh/`
+                                                                       `:shyyyyhmhyddhmdddddNNNNNNNNNNNNNNNNNm+/hddddmhyyyyyyyyyyyyyddyyyyyyyyyyyyyyyhddhyyyys+:-+hh/`
+                                                                         `/hhyydhhdhyhmyhhyhhdmNNNNNNNNNNNNNNh-:hddddmNmmmmmdhyyyyyyhmyyyyyyyyyyyyyyyyyyhddyyyyso/-/yy:
+                                                                           :dhyhhyyyydhdddhhhhddNNNNNNNNNNNNm/ -hdddddNdyyhhdmmmdhyyymhyyyyyyyyyyyyyyyyyyyhddhyyyys/-/yo.
+                                                                            /dhyyyyyhmdhhhhdddddmNNNNNNNNNNm+` .ydddddmmyyyyyyyhhdddhdmyyyyyyyyyyyyyyyyyyyyyhmdyyyyys/-oy:`
+                                                                            `omyyyyyyyyyyyyhddmmmNNNNNNNNNd/`  `sddddddNhyyyyyyyyyyyhhmyyyyyyyyyyyyyyyyyyyyyyydmhyyyyso::ho`
+                                                                             `ydyyyyyyyyyyyhmNmddNmhdNmmmy+/`   +ddddddmmhyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyydhyyyyys+ody-
+                                                                              .ddyyyyyyyyyhmmddddmNdyyydysyy+`  :hdddddmmyhhyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyhdyyyyyyhddd:
+                                                                               /NhyyyyyyydNhshddddNNdhhhhddys-  -hddddddmyyhdhyyyyyyyyyyyyyhhyyyyyyyyyyyyyyyyyyyyyhhyhhddddddm+`
+                                                                               `hNyyyyyyyNh.+yddddmNNddddddhy+` .yddddddmdyyyddhyyyyyyyyyyyyhdddhyyyyyyyyyyyyyyhhhhdmdddddddddmo`
+                                                                                :Nmyyyyyhm/.oyhdddmNNmddddddys- `oddddddmmyyyyhmdyyyyyyyyyyyyddddddddhhhhddddddddddddmddddddddmNo`
+                                                                                `oNmyyyydh-//syddddNNNmdddddhy+` /hddddddmyyyyyydmhyyyyyyyyyydddddddddddddddddddddddddmddddddddmNo`
+                                                                                 `sNdyyyms:s:/yhdddmNNNddddddys. :hddddddmhyyyyyyhmdyyyyyyyyyhdddddmmddddddddddddddddddmddddddddNNo`
+                                                                                  `yNdyhmsoyo-oyhddmNNNmdddddhy/ .yddddddmmyyyyyyyymmyyyyyyyydddddddNmddddddddddddddddddmmddddddmNN/
+                                                                                   `yNddNhyyy+-sydddNNNNmdddddyo``sdddddddmyyyyyyyyymmyyyyyyydddddddmNNdddddddddddddddddmNmddddddmNd
+                                                                                    `yNmNdyyys::shddmNNNNdddddhs:`+hddddddmhyyyyyyyyymdyyyyyyddddddddmNNdddddddddddddddddmNdddddddmd
+                                                                                     `yNNmyyyyo.+yhddNNNNmdddddy+`/yddddddmdyyyyyyyyyhmyyyyyhdddddddddNNNdddddddddddddddddmNdddddddy
+                                                                                      `yNNdyyys:`oyddmNNNNmddddhs.-ydddddddmyyyyyyyyyymdyyyyddddddddddmNNmdddddddddddddddddmNddddddy
+                                                                                       .hNNdyyy+`.shdmNNNNNmddddy/.shddddddNhyyyyyyyyyhmyyyhdddddddddddNNNmdddddddddddddddddmNmddddy
+                                                                                        oNNhyyys``oyddNNNNNNddddho.ohddddddmdyyyyyyyyyymhyyddddddddddddmNNmddddddddddddddddddmNmdddh
+                                                                                       .dNdyyyys-`oyhdmNNNNNmddddy-/hddddddmmyyyyyyyyyyddyddddddddddddddNNNddddmdddddddddddddddmmddh
+                                                                                      `yNNyyyyyyssyyhddNNNNNNmdddy+:ydddddddNhyyyyyyyyydmhddddddddddddddmNNmmNmdddddddddddddddddmmdd
+Blew the entire budget on getting an awesome pilot for the ship...
+*/
+
 class Ship{
 
 public:
 	//position
 	float x, y, vx, vy;
+
 	int maxH, H;
+	int maxP, P;
+
+	bool dead, exploded;
 
 	//drawing parts
 	XPoint bkWing[12];
@@ -21,11 +148,13 @@ public:
 	XPoint collider[4];
 
 	//construct
-	Ship(int mhp){
+	Ship(int mhp, int mp){
 		x = shipInitX;
 		y = 0;
 		maxH = mhp;
 		H = maxH;
+		maxP = mp;
+		P = maxP;
 
 		bkWing[0].x = 0; bkWing[0].y = -3;
 		bkWing[1].x = -4; bkWing[1].y = -12;
@@ -61,6 +190,9 @@ public:
 		collider[1].x = -14; collider[1].y = -3;
 		collider[2].x = -9; collider[2].y = 9;
 		collider[3].x = 9; collider[3].y = 9;
+
+		dead = false;
+		exploded = false;
 	}
 
 	//pass in const gInfo where needed
@@ -111,42 +243,48 @@ public:
 
 	//if it's gonna be in ground reverse v vector and don't move, try again in next frame
 	void move(){
-		x += vx;
-		y += vy;
+		if(!dead){
+			x += vx;
+			y += vy;
+		}
+	}
+
+	void kill(){
+		H = 0;
+		P = 0;
+		dead = true;
 	}
 
 	void drawPos(gInfo game, float sx, float sy){
 		//draw: backwings, backplate, void orb, frontwings, head, appends
-		for(int i=0; i<12; i++){
-			bkWingRender[i].x = bkWing[i].x + sx;
-			bkWingRender[i].y = bkWing[i].y + sy;
-		}
+		if(!dead){
+			for(int i=0; i<12; i++){
+				bkWingRender[i].x = bkWing[i].x + sx;
+				bkWingRender[i].y = bkWing[i].y + sy;
+			}
 
-		for(int i=0; i<5; i++){
-			rWingRender[i].x = rWing[i].x + sx;
-			rWingRender[i].y = rWing[i].y + sy;
-			lWingRender[i].x = lWing[i].x + sx;
-			lWingRender[i].y = lWing[i].y + sy;
-		}
+			for(int i=0; i<5; i++){
+				rWingRender[i].x = rWing[i].x + sx;
+				rWingRender[i].y = rWing[i].y + sy;
+				lWingRender[i].x = lWing[i].x + sx;
+				lWingRender[i].y = lWing[i].y + sy;
+			}
 
-		for(int i=0; i<4; i++){
-			headRender[i].x = head[i].x + sx;
-			headRender[i].y = head[i].y + sy;
-		}
+			for(int i=0; i<4; i++){
+				headRender[i].x = head[i].x + sx;
+				headRender[i].y = head[i].y + sy;
+			}
 
-		drawPoly(game, bkWingRender, 12, game.col.dred, game.col.gray192);
-		drawCirc(game, sx, sy, 7, game.col.gray64, game.col.black);
-		drawCirc(game, sx, sy, random(3,5), game.col.laser, game.col.blue);
-		drawPoly(game, rWingRender, 5, game.col.gray128, game.col.gray64);
-		drawPoly(game, lWingRender, 5, game.col.gray128, game.col.gray64);
-		XSetForeground(game.dsp, game.gc, game.col.blue);
-		XDrawLine(game.dsp, game.win, game.gc, sx, sy, sx+random(-12,12), sy+random(-12,12));
-		XDrawLine(game.dsp, game.win, game.gc, sx, sy, sx+random(-12,12), sy+random(-12,12));
-		XDrawLine(game.dsp, game.win, game.gc, sx, sy, sx+random(-12,12), sy+random(-12,12));
-		XDrawLine(game.dsp, game.win, game.gc, sx, sy, sx+random(-12,12), sy+random(-12,12));
-		XDrawLine(game.dsp, game.win, game.gc, sx, sy, sx+random(-12,12), sy+random(-12,12));
-		XDrawLine(game.dsp, game.win, game.gc, sx, sy, sx+random(-12,12), sy+random(-12,12));
-		XDrawLine(game.dsp, game.win, game.gc, sx, sy, sx+random(-12,12), sy+random(-12,12));
-		drawPoly(game, headRender, 4, game.col.gray128, game.col.gray64);
+			drawPoly(game, bkWingRender, 12, game.col.dred, game.col.gray192);
+			drawCirc(game, sx, sy, 7, game.col.gray64, game.col.black);
+			drawCirc(game, sx, sy, random((P*5)/maxP,(P*7)/maxP), game.col.laser, game.col.blue);
+			drawPoly(game, rWingRender, 5, game.col.gray128, game.col.gray64);
+			drawPoly(game, lWingRender, 5, game.col.gray128, game.col.gray64);
+			XSetForeground(game.dsp, game.gc, game.col.blue);
+			for(short i=0; i<((P*9)/maxP); i++){
+				XDrawLine(game.dsp, Buffy, game.gc, sx, sy, sx+random(-((P*13)/maxP),((P*13)/maxP)), sy+random(-((P*13)/maxP),((P*13)/maxP)));
+			}
+			drawPoly(game, headRender, 4, game.col.gray128, game.col.gray64);
+		}
 	}
 };

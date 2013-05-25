@@ -1,16 +1,98 @@
+/*
+              `...``                                              `:++/.
+            `/oooooo+/:.`                                        .++++oo:                                                 `..---.
+            /o+/::://++o+/-.                                    .++::::+o-                                           `.:/+++++++o:
+           `oo/:::::::::/++++:`                                 ++:::::/o+`                `..---::::--..`        .-/+++//::::::+o`
+           .o+:::::::::::::/+o+/-                              :o/:::::/+o:     .-:/+osyhdddmmmmmmmmmmmmmddhso/-:+++/:::::::::::+o-
+           .o+::::::::::::::::/+o+-`                          `++:::::/+/o+/oyhdddmmmdddddmmdddddddddddddddddmmmmhs+::::::::::::/o:
+           `o+::::::::::::::::::/+o+-`                        -o++///+/::+oydddddddddddddddmmddddddddddddddddddddmmmdy+:::::::::/o:
+            ++:::::::::::::::::::::+++-                    `-:+o:::::::::/oodddddddddddddddddmmdddddddddddddddddddddmmmdy+::::::+o:
+            /o::::::::::::::/::::::::++/.             .-/ohddhoo++:::::::/oohddddddddddddddddddmdddddddddddddddddddddddmmmds/:::+o-
+            -o/::::::::::::::/:::::::::++:       .:+shddhhyssoooooo+::::+/+oyddddddddddddddddddddmddddddddddddddddddddddddmmdy+:+o.
+            `++:::::::::::::::/:::::::::/+/.`-/shddmdddyooooooooooooo//+/:+osdddddddddddddddddddddmdddddddddddddddddddddddddmmdyso` `..`
+             :o::::::::::::::::/::::::::::/+hdmdddddddddsooosoooooooooo/::/oohddddddddddddddddddddddmdddddddddddddmmmmmmmmmmmmmmmh++/::/o+`
+             `++::::::::::::::://:::::::::/hddddddddddddhooosysooooooooo/:/oohhddddddddddddddddddddddmddddddddddddddmmmmdsooosshmyy/    `/h.
+              :o/::::::::::::::://:::::::+dmdddddddddddddyoooydsooooooooo+/ooyhhhdddddddddddddddddddddmddddddddddddddddmmdho/:/yh` ./.    d+
+               ++::::::::::::::::/::::::odmddddddddddddddhooosmdsooooooooooooshhhhdddddddddddddddmdddddddddddmdddddddddddmmmdyssy++o/   `os`
+               `++::::::::::::::::/:::/ymmddddddddmddddhhdsooohmdsoooooooooooshhhhhdddddddddddddddmmdddddmddddmdddddddddddddmmmh:..`  ./s:`
+                .+/:::::::::::::::/::odmdddddddddmdmdddhossooosmmdsooooooooooohhhhhhdddddddddddddddmmdddddmddddmddddddddddddddmmdo..:++-`
+                 .+/:::::::::::::::+ymmdddddddddmsommdddsoooooodmmdsoooooooooohhhhhhhdddddddddddddddmmmddddmddddmdddddddddddddddmmh+.`
+                  .+/::::::::::::+ydmddddddddddmy::dmdddsoooooohmmmdsoooooooooshhhhhhhdddddddmmddddddmmmddddmdddmmdddddddddddddddmmd-
+                   `//::::::::/ohmmdddddddddddmy:::ymmddyoooooohmmdmhooooooooooyhhhhhhddddddddmmdddddmmdddddmmdddmmdddddddddddddddmmh`
+                     -/::://oydmdddddddddddddmdo++/ommddyooooooymmommsooooooooooyhhhhhhdddddddmydmddddmmhmdddmdddmmmmddddddddddddddmm+
+                     `-osyhdmddddddddddddddddyyyyhdmmmddyooooooymm/ymdoooooooooosyhhhhhdddddddmhhmmddddmm+dmddmddmmdmmddddddddddmmmdy/
+                 .:+sydmmdddddddddddddddddmh:     `:mmddyoooooohmm/+mmyooooooooooshhhhhhddddddmmyshmdddmm//dmdmmddmsommdddddmmdhy+-.
+                 -ohdmmmddddddddddddddddddo`       `mmddyoooossdmd::hmdsyyyyhhhhhhddddddmmmdddmm/ `ymddmms:smmdmddmh/ymmmmdhs/-`
+                   `-/shdmmddddddddddddmy-         .mmddyssyhdddy+::sddhhhyyyssssooohm+/+++ossyh/  `ydmmhs:/mddddmmd/:dhs/-`
+                       `-:oyhddmmmmddmh/`          :mmdmdddmNs/::::::::::::::::::::oN/              `.dm+shdy///oso/ `-`
+                         --` `-syymsy+`            oddhs/-.oMm::::::::::::::::::::/N/                 -Mms+:::/+/.
+                          /ys++yyhy                --`      sMy:::::::::::::::::::mo                   sd:::/+s:
+                            -/ohhy:                          hN/:::::::::::::::::sh                    `Nhhdmdo
+                              -oo:`                          .My:::::::::::::::::N-                     :++ss:
+                              -oo:                            yN::::::::::::::::sh                      .::+o:
+                              -oo:       ``                   :Mo:::::::::::::::m/                 ..   `::+o:
+                              -oo:      oN+-                  `Mh::::::::::::::/M`                oNo:  `::+o+///:
+                           `.`.oo:     `dN++                   mm::::::::::::::oN                 hNso  `/+++///oo`
+                          `ooosyyo.     /Nh+                   yM::::::::::::::yd                 :dd+  .+/:::::o/
+                           +ssooos/     `::                    sM/:::::::::::::yh                 `--   /oo+:::/o.
+                           :o+syyyy`                           oM+:::::::::::::hy                       ++//+::+/
+                           .dh+/://-                           oM/:::::::::::::yy                      :hddy/:+o.
+                           `/+:::odd-                          oM/:::::::::::::yy                      ::+/+yoo/
+                            `o+::hy/:`                         oN::::::::::::::oh                     -dho/::+o.
+                             :o/:/++/:.                        sh::::::::::::::/d                    `:+hs::/o/
+                             `++::/+:+:-.                      yo:::::::::::::::d                   .:+/++::+o.
+                              -o/::+:-+/::.`                   h::://+///:::::::d                  -/+-/+::+o/
+                               /o::/+.`/+/::--.```     ````...-/:://:::://::::::s.               .:+:.-+/:/o+`
+                               `++::++. ./+/::::::::::::::::::::::::::::::::::::::-..`````````.-://.`./+::+o-
+                                -o/::+/.` ./+/::::::////::::::://::::::::::/:::::::://::::::::://-`.`:+::+o/
+                                 :o/:/+-.`  .:++/::::::::::::::///:::::::://:::::::::///::::/+/-``.`-+/:+o+`
+                                  :+/:/+-..   `.:/+/:::::::::::::::::::::::::::::::::::://+/:.  `` -+/:+o+`
+                                   :+/:/+-`.`    `.-:/+///::::::::::::::::::::::::://///:-`   ``` -+/:+o+`
+                                    :+/:/+:````      ``.-:://////////////////////::--.`      `` `:+/:+o+`
+                                     -+/::+/. ```           `````..........`````           `   .++::+o/`
+                                      ./+::/+:`                                              `:+/:/++:
+                                       `:+/::/+-`                                          `:+/:/+o/.
+                                   :+//  ./+/:://:`                                      .:++::/++-`
+                                   d. `    ./+/::///-`                                .-/+/://++:`
+                                 `-oo:-...-:/:+o+/::///-.`                       ``.:/+//:/++/-`
+                               `/yd/`.----.` `hdyso+//////::-.```         ```.-:////////++/:.
+                              .ydddh`        omdddhoo++++///////::::::::////////////+++/-.`
+                              hddddmy-`    .omdddddoo+://+++++++++///////////++++++oo-`
+                             `mdddddddyoooshddddddhoo/::::::://////++++++///////:::+o-
+                              sdddddddddddddddddddhoo/:::::::::::::::::::::::::::::+o:
+                              `sddddddddddddddddddyoo/:::::::::::::::::::::::::::::+o/
+                                -+yhddddddddddddddyoo::::::::::::::::::::::::::::::/o+
+                            /-`    `-:/++sdmdhhhhhso+::::::::::::::::::::::::::::::/oo`
+                           .mmhs+:.````.+hddhhhhhhoo+:::::::::::::::::::::::::::::::oo.
+                           /mdhddddhhhhddhhhhhhhhhoo/:::::::::::::::::::::::::::::::oo-
+                           omdhhhhhhhhhhhhhhhhhhhyoo/:::::::::::::::::::::::::::::::+o:
+                           /mdhhhhhhhhhhhhhhhhhysooo::::::::::::::::::::::::::::::::+o+/.
+                           `hmdhhhhhhhhhhhyyssooooo+::::::::::::::::::::::::::::::::/o+++:`
+                            .hmyssssssssooooooooooo/::::::::::::::::::::::::::::::::/o+:++/`
+                             `oddysoooooooooooooooo::::::::::::::::::::::::::::::::::++::+++.
+                               `:shhyyssoooooossyy/:::::::::::::::::::::::::::::::::://:::+++`
+                                   .:yhhhhhhyyyss+:::::::::::::::::::::::::::::::::::::::::++/
+                                    -oo++o+:::::::::::::::::::::::::::::::::::::::::::::::::++-
+                                    /o+++o/:::::::::::::::::::::::::::::::::::::::::::::::::/+/
+                                    oo++oo/::::::::::::::::::::::::::::::::::::::::::::::::::++`
+Me on friday...
+CLOCK! IS! TICKING!!!
+*/
+
 //uber lazy coder
 typedef unsigned long ulong;
 #define uSec 1000000
 #define PI 3.14159265
 #define charWidth 6
 #define cameraDamp 0.93
+#define alienDamp 0.95
 
 //default window dimensions
 #define defH 600
 #define defW 800
 
 //frame rate
-#define fps 60
+#define fps 62 //push it slightly above 60 to achieve slightly better rate under stress
 
 //used for keyboard input processing
 #define keyBuffSize 3
@@ -25,12 +107,14 @@ typedef unsigned long ulong;
 
 //game variables
 #define maxHP 1000
+#define maxPP 1000
 #define fireDelay 0
 #define laserSpray 0.05
 #define laserRad 2
 #define laserSpeed 15
 #define terrainLen 1200
 #define bkTerrainLen 300
+#define maxTerrainDepth 1300
 #define colSparkLife 240
 #define colSparkLifeVar 120
 #define starCount 200
@@ -40,7 +124,13 @@ typedef unsigned long ulong;
 #define boundWarn 500
 #define xMin 1600
 #define xMax 9200
+#define warpHP 66
+#define warpCount 13
+#define alienCount 12
+#define alienMV 6
+#define shipBombSpread 0.2
 #define padCount 7
+#define padWidth 6
 
 //need to define abs bounds
 
@@ -57,6 +147,7 @@ struct colorPallete{
 	ulong gray24;
 	ulong gray16;
 
+	ulong dblue;
 	ulong star;
 	ulong red;
 	ulong blue;
@@ -67,6 +158,7 @@ struct colorPallete{
 	ulong gradPulse[g_pulse];
 	ulong gradLaser[g_laser];
 	ulong gradLaserRed[g_laser];
+	ulong gradReactor[g_pulse];
 };
 
 //container for important game information
@@ -103,15 +195,20 @@ struct star{
 	short type;//0,1,2
 };
 
-struct pad{
+struct lpad{
 	int l,r; //within the abs limit the index of terrain points
 };
 
 struct alien{
 	float x, y, vx, vy, rad;
-	int hp;
+	short hp;
 };
 
+struct alienWarp{
+	short hp, pos;
+};
+
+vector<alienWarp> warps;
 vector<alien> aliens;
 
 //container for playtime information
@@ -119,22 +216,41 @@ vector<alien> aliens;
 struct pInfo{
 	XPoint tpt[terrainLen];
 	XPoint bktpt[bkTerrainLen];
-	bool terrainDestruct;
 	int maxX;
 	star stars[starCount];
-	pad pads[padCount];
+	int score;
+	lpad pad[padCount];
+	bool missionDone;
+	bool hardcore; //touch ground and die
+	bool over9000; //extreme power regen
+	bool homunculus; //extreme hp regen
+	bool malphite; //can't move me
+	bool keikaku_doori; //all aliens eliminated keikaku doori
+	bool win; //set after winning
+	bool fraps;
 };
 
 struct msg{
 	char* text;
 	ulong color;
 	float xr,yr;
+	short anchor; //-1,0,1 left, right, center justify
 };
 
 struct gmsg{
 	msg boundary;
 	msg small;
 	msg pause;
+	msg alien;
+	msg hardcore;
+	msg immortal;
+	msg plevel;
+	msg stable;
+	msg sakujo;
+	msg winner;
+	msg score;
+	msg frames;
+	msg final;
 };
 
 //tracers for control states
@@ -201,10 +317,43 @@ float fTerrain(int dist, int varRad, int amplitude){
 	return (sin(dist*PI/180)*amplitude) + random(-varRad, varRad);
 }
 
+void initWarps(short count){
+	for(short i=0; i<count; i++){
+		alienWarp w;
+		w.hp = warpHP;
+		w.pos = random(200,1000);
+		warps.push_back(w);
+	}
+}
+
+void initPads(){
+	for(int i=0; i<padCount; i++){
+		play.pad[i].l = random(205+(i*(800/padCount))+padWidth,195+((i+1)*(800/padCount))-padWidth);
+		play.pad[i].r = play.pad[i].l + padWidth;
+	}
+}
+
+//check ship x to be in one of the landing bounds
+bool inLanding(float sx){
+	for(int i=0; i<padCount; i++){
+		if(sx >= play.tpt[play.pad[i].l].x && sx <= play.tpt[play.pad[i].r].x){
+			return true;
+		}
+	}
+	return false;
+}
+
+bool isPad(short index){
+	for(int i=0; i<padCount; i++){
+		if(index >= play.pad[i].l && index <= play.pad[i].r){
+			return true;
+		}
+	}
+	return false;
+}
+
 //probably follow a randomized composite sine function
 void initTerrain(){
-	play.terrainDestruct = false;
-
 	int stretchFactor = 3;
 	int rOff1 = random(0,360);
 	int rOff2 = random(0,360);
@@ -234,6 +383,34 @@ void initTerrain(){
 							fTerrain(rOffMaster + i*stretchFactor*4, 10, 80) +
 							500;
 	}
+
+	initPads();
+	for(int i=0; i<padCount; i++){
+		float avg = 0;
+		for(int j=0; j<=padWidth; j++){
+			avg += play.tpt[play.pad[i].l+j].y;
+		}
+		avg /= (padWidth+1);
+		for(int j=0; j<=padWidth; j++){
+			play.tpt[play.pad[i].l+j].y = avg;
+		}
+		play.tpt[play.pad[i].l-1].y = avg - 10;
+		play.tpt[play.pad[i].r+1].y = avg - 10;
+		play.tpt[play.pad[i].l-2].y = avg - 10;
+		play.tpt[play.pad[i].r+2].y = avg - 10;
+	}
+
+	//cheats and stuff
+	play.hardcore = false;
+	play.homunculus = false;
+	play.over9000 = false;
+	play.malphite = false;
+	play.keikaku_doori = false;
+	play.win = false;
+	play.score = 0;
+	play.fraps = true;
+
+	initWarps(warpCount);
 }
 
 void initStars(){
@@ -248,41 +425,51 @@ void initStars(){
 //consider adding internal check for drawing off screen so we avoid requesting those
 void drawLine(const gInfo g, float x1, float y1, float x2, float y2, ulong c){
 	XSetForeground(g.dsp, g.gc, c);
-	XDrawLine(g.dsp, game.win, g.gc, x1, y1, x2, y2);
+	XDrawLine(g.dsp, Buffy, g.gc, x1, y1, x2, y2);
 }
 
 void drawRect(const gInfo g, float x, float y, float w, float h, ulong cFill, ulong cEdge){
 	XSetForeground(g.dsp, g.gc, cFill);
-	XFillRectangle(g.dsp, g.win, g.gc, x, y, w, h);
+	XFillRectangle(g.dsp, Buffy, g.gc, x, y, w, h);
 	if(cFill != cEdge){
 		XSetForeground(g.dsp, g.gc, cEdge);
-		XDrawLine(g.dsp, g.win, g.gc, x, y, x+w, y);
-		XDrawLine(g.dsp, g.win, g.gc, x, y, x, y+h);
-		XDrawLine(g.dsp, g.win, g.gc, x+w, y+h, x+w, y);
-		XDrawLine(g.dsp, g.win, g.gc, x+w, y+h, x, y+h);
+		XDrawLine(g.dsp, Buffy, g.gc, x, y, x+w, y);
+		XDrawLine(g.dsp, Buffy, g.gc, x, y, x, y+h);
+		XDrawLine(g.dsp, Buffy, g.gc, x+w, y+h, x+w, y);
+		XDrawLine(g.dsp, Buffy, g.gc, x+w, y+h, x, y+h);
 	}
 }
 
 void drawPoly(const gInfo g, XPoint v[], int vLen, ulong cFill, ulong cEdge){
 	XSetForeground(g.dsp, g.gc, cFill);
-	XFillPolygon(g.dsp, g.win, g.gc, v, vLen, Complex, CoordModeOrigin);
+	XFillPolygon(g.dsp, Buffy, g.gc, v, vLen, Complex, CoordModeOrigin);
 	if(cFill != cEdge){
 		XSetForeground(g.dsp, g.gc, cEdge);
-		XDrawLines(g.dsp, g.win, g.gc, v, vLen, CoordModeOrigin);
-		XDrawLine(g.dsp, g.win, g.gc, v[0].x, v[0].y, v[vLen-1].x, v[vLen-1].y);
+		XDrawLines(g.dsp, Buffy, g.gc, v, vLen, CoordModeOrigin);
+		XDrawLine(g.dsp, Buffy, g.gc, v[0].x, v[0].y, v[vLen-1].x, v[vLen-1].y);
 	}
 }
 
 void drawCirc(const gInfo g, float x, float y, float rad, ulong cFill, ulong cEdge){
 	XSetForeground(g.dsp, g.gc, cFill);
-	XFillArc(g.dsp, g.win, g.gc, x-rad, y-rad, 2*rad, 2*rad, 0, 360*64);
+	XFillArc(g.dsp, Buffy, g.gc, x-rad, y-rad, 2*rad, 2*rad, 0, 360*64);
 	if(cFill != cEdge){
 		XSetForeground(g.dsp, g.gc, cEdge);
-		XDrawArc(g.dsp, g.win, g.gc, x-rad, y-rad, 2*rad, 2*rad, 0, 360*64);
+		XDrawArc(g.dsp, Buffy, g.gc, x-rad, y-rad, 2*rad, 2*rad, 0, 360*64);
 	}
 }
 
 void drawText(const gInfo g, msg m){
 	XSetForeground(g.dsp, g.gc, m.color);
-	XDrawString(g.dsp, g.win, g.gc, g.scrW*m.xr-((strlen(m.text)*charWidth)/2), g.scrH*m.yr, m.text, strlen(m.text));
+	switch(m.anchor){
+	case -1:
+		XDrawString(g.dsp, Buffy, g.gc, g.scrW*m.xr, g.scrH*m.yr, m.text, strlen(m.text));
+		break;
+	case 0:
+		XDrawString(g.dsp, Buffy, g.gc, g.scrW*m.xr-((strlen(m.text)*charWidth)/2), g.scrH*m.yr, m.text, strlen(m.text));
+		break;
+	case 1:
+		XDrawString(g.dsp, Buffy, g.gc, g.scrW*m.xr-(strlen(m.text)*charWidth), g.scrH*m.yr, m.text, strlen(m.text));
+		break;
+	}
 }
